@@ -36,5 +36,14 @@ it('点击按钮测试，如果内容不为空,能添加一条数据',()=>{
     let button = wrapper.find('button');
     input.setValue("hello");
     button.trigger('click');
-    expect(wrapper.find('li').text()).toBe(/hello/);
+    expect(wrapper.find('li').text()).toMatch(/hello/);
+    expect(1+1).toBe(2)
 })
+
+// 先写用例  覆盖率高
+// ui组件 只用BDD   集成测试 
+// TodoInput ToList TodoItem
+
+// Todo
+
+// jest **
